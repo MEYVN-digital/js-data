@@ -9403,9 +9403,13 @@ var Mapper$1 = Component$1.extend({
     if (this && this.schema) {
       json = this.schema.pick(record);
     } else {
-      for (var key in record) {
-        if (relationFields.indexOf(key) === -1) {
-          json[key] = utils.plainCopy(record[key]);
+      if ((typeof FormData != "undefined") && (record instanceof FormData)) {
+        json = record
+      } else {
+        for (var key in record) {
+          if (relationFields.indexOf(key) === -1) {
+            json[key] = utils.plainCopy(record[key]);
+          }
         }
       }
     }
