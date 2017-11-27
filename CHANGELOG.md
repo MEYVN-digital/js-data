@@ -1,3 +1,21 @@
+##### 3.0.1 - 18 August 2017
+
+###### Backwards compatible changes
+- Exposed the `makeDescriptor` method on the `Schema` class.
+
+###### Bug fixes
+- Fixes some missing definitions in `dist/js-data.d.ts`.
+
+###### Other
+- Upgraded dependencies.
+
+##### 3.0.0 - 01 July 2017
+
+**v3 Stable Release**
+
+###### Bug fixes
+- [#473] - Fixes #471 by @Tronix117
+
 ##### 3.0.0-rc.9 - 22 February 2017
 
 ###### Bug fixes
